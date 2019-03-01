@@ -17,12 +17,24 @@ class Api::V1::ListsController < ApplicationController
 
   def create
     @list=List.create(list_params)
-    render json: @list, status: :ok
+    if @list.valid?
+      render json: @list, status: :ok
+    else
+      render json: {errors: @list.errors.full_messages}, status: 422
+    end
+  end
+
+  def destroy
+    @list=List.find(params[:id])
+    @list.destroy()
+    render json: {}
   end
 
   private
   def list_params
     params.require(:list).permit(:user_id,:title)
   end
+
+
 
 end
