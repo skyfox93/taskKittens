@@ -1,24 +1,11 @@
-# README
+## TaskKittens: Task Management + Kittens
+  Video Demo: https://www.youtube.com/watch?v=zU2ChDRRH8g
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  This is the back-end repository. The ReactJS front-end is available [here](https://github.com/skyfox93/taskKittens-front)
+  ### Features
+  + **Add lists to your account**
+  + **Add tasks to each list**
+  + **Rename lists or tasks**
+  + **Set Due Dates**
+  + **View Tasks with Upcoming Due Dates**
+  + **Set Visibility of completed tasks/ Lists**
